@@ -22,10 +22,7 @@ let ndir;
 
 const databaseDetails = [
 	{
-		mongoSRV:
-			'mongodb+srv://JharUpdateDB:' +
-			process.env.JharUP_MONGO_PASSWORD +
-			'@cluster0.0hlth.mongodb.net/?',
+		mongoSRV: process.env.JharUP_MONGO_URI,
 		folderName: 'JharkhandUpdate',
 		ec2URL: 'x',
 		S3ACCESSKEY: process.env.JHARUP_SECRETACCESSKEY,
